@@ -1,18 +1,25 @@
-:root {
-    --primary: #d53215;
-    --secondary: #1ab565;
+/* Declaramos nuestras variables para el color */
+:root { 
+    --primary: #fc0041;
+    --secondary: #211f73;
+    --third: #de4b1d;
+    --fourth: #00FF99; /*Hace contraste solo primary*/
 }
 
+/* Dejamos toda la web sin margenes o espacio dentro la cajas en  */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Fondo de la pagina web */
 body{
     background-color: var(--secondary);
 }
 
+/* Hacemos que el contenedor sea flexible con flexbox
+junto con espaciado 80px arriba/abajo y 32px izquierda/derecha */
 .background {
     width: 100%;
     display: flex;
@@ -21,6 +28,7 @@ body{
     padding: 80px 32px;
 }
 
+/* El contenedor articles dentro de background se hace responsivo con flexbox y algo de grid*/
 .articles {
     display: flex;
     flex-wrap: wrap;
@@ -41,7 +49,7 @@ body{
 
 .articles article a {
     display: inline-flex;
-    color: var(--primary);
+    color: var(--third);
     text-decoration: none;
 
 }
@@ -81,9 +89,3 @@ body{
 .articles article:hover img {
     transform: scale(1.5);
 }
-
-
-/* 
-img {
-    width: 100%;
-} */
