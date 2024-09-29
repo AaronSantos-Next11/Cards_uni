@@ -1,12 +1,17 @@
 /* Declaramos nuestras variables para el color */
-:root { 
-    --primary: #fc0041;
-    --secondary: #211f73;
-    --third: #de4b1d;
-    --fourth: #00FF99; /*Hace contraste solo primary*/
+:root {
+
+    /** Colores */
+    --primary: #FD7400; /*Para subtítulos y botones*/
+    --secondary: #211f73; /* Para el fondo*/
+    --third: #00FF99; /*Hace contraste con primary*/
+
+    /** Fuentes */
+    --primary_font: "PT Sans", Calibri, Tahoma, sans-serif;
+    --secondary_font: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* Dejamos toda la web sin margenes o espacio dentro la cajas en  */
+/* Dejamos toda la web sin margenes o espacio dentro la cajas, reiniciamos las medidas pues */
 * {
     margin: 0;
     padding: 0;
@@ -16,11 +21,35 @@
 /* Fondo de la pagina web */
 body{
     background-color: var(--secondary);
+    font-family: var(--primary_font);
+}
+
+button {
+    padding: 10px 10px;
+    background-color: var(--secondary);
+    border-style: hidden;
+    border-radius: 17px;
+    margin-top: 18px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 4rem;
+    color: var(--third);
+    margin: 0 auto;
 }
 
 /* Hacemos que el contenedor sea flexible con flexbox
 junto con espaciado 80px arriba/abajo y 32px izquierda/derecha */
-.background {
+.main_container {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -49,8 +78,10 @@ junto con espaciado 80px arriba/abajo y 32px izquierda/derecha */
 
 .articles article a {
     display: inline-flex;
-    color: var(--third);
+    color: var(--primary);
     text-decoration: none;
+    font-size: 16px;
+    font-family: var(--secondary_font);
 
 }
 
@@ -88,4 +119,14 @@ junto con espaciado 80px arriba/abajo y 32px izquierda/derecha */
 
 .articles article:hover img {
     transform: scale(1.5);
+}
+
+footer {
+    background-color: var(--third);
+    padding: 27px;
+}
+
+footer > .footer_text {
+    color: var(--secondary);
+    text-align: center;
 }

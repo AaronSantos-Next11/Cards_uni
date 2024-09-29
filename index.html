@@ -1,34 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Cards</title>
-</head>
-<body>
-    <!-- Contenedor principal de la tarjeta 1 -->
-    <div class="background">
-        <div>
+  </head>
+  <body>
 
-            <div class="articles">
-                <article>
-                    <figure>
-                        <img src="https://www.itmastersmag.com/wp-content/uploads/2021/07/shutterstock_1825096265-scaled-e1626284388660.jpg" alt="IA images">
-                    </figure>
-                    <div class="articles-preview">
-                        <h2>What's the IA in this moment?</h2>
-                        <p>
-                            AI allows computers to learn and solve problems almost like a person. AI systems are trained on huge amounts of information and learn to identify the patterns in it, in order carry out tasks such as having human-like conversation, or predicting a product an online shopper might buy.
-                            <a href="https://www.bbc.com/news/technology-65855333" title="Read more"> Read more </a>
-                        </p>
-                    </div>
-                </article>
-            </div>
+    <header>
+        <h1>My favorite technologies</h1>
+    </header>
 
-        </div>
+    <!-- Contenedor principal de las tarjetas -->
+    <div class="main_container">
+      <div class="articles">
+        <!--* Target 1 -->
+        <article>
+          <figure>
+            <img
+              src="https://codersguild.net/media/k2/items/cache/620466077c427f141effa294382f5fba_L.jpg?t=20240221_113817"
+              alt="JavaScript image"
+            />
+          </figure>
+          <div class="articles-preview">
+            <h2> What is JavaScript? </h2>
+            <p>
+                JavaScript (JS) is a lightweight interpreted (or just-in-time compiled) 
+                programming language with first-class functions. While it is most
+                well-known as the scripting language for Web pages, many non-browser 
+                environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat.
+                JavaScript is a prototype-based, multi-paradigm, single-threaded,
+                dynamic language, supporting object-oriented, imperative,
+                and declarative (e.g. functional programming) styles.
+                JavaScript can update and change both HTML and CSS and
+                can calculate, manipulate and validate data.
+            </p>
+            <button>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                  title="Read more"
+                  target="_blank">
+                  Read more
+                </a>
+            </button>
+          </div>
+        </article>
+
+        <!--* Target 2 -->
+        <article>
+          <figure>
+            <img
+              src="https://iglu.net/wp-content/uploads/2022/12/What-is-Golang.png"
+              alt="Golang image"
+            />
+          </figure>
+          <div class="articles-preview">
+            <h2>What is Go (Golang)?</h2>
+            <p>
+                Go (Golang) is a programming language used for a variety of purposes,
+                including servers, web development, cloud infrastructure, and command-line
+                interfaces. It’s also beginner-friendly and easy to remember.
+                Go was designed by Google in 2007. Google was rapidly growing then,
+                and the code its engineers were using, C++ was difficult to manage
+                and overly complex. This slowed down the development process.
+                So Google engineers Robert Griesemer, Rob Pike, and Ken Thompson,
+                developed something easier to manage and learn. This language was Go.
+            </p>
+            <button>
+                <a
+                  href="https://www.codecademy.com/resources/blog/what-is-go/"
+                  title="Read more"
+                  target="_blank">
+                  Read more
+                </a>
+            </button>
+          </div>
+        </article>
+
+        <!--* Target 3-->
+        <article>
+          <figure>
+            <img
+              src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*fmpeXj1eUS-Nrkkv.png"
+              alt="Rust programming language image"
+            />
+          </figure>
+          <div class="articles-preview">
+            <h2>What is Rust?</h2>
+            <p>
+                In the ever-evolving world of programming, Rust has emerged 
+                as a significant player. Known for its focus on safety and 
+                performance, Rust is a multi-paradigm programming language 
+                that has been gaining traction among developers.
+                But what exactly is Rust, and why is it gaining such
+                popularity? t’s designed to be a systems programming language, 
+                competing with C and C++ in areas like operating systems, game engines,
+                and other high-performance applications. Rust is a systems programming
+                language that has gained significant popularity among developers.
+            </p>
+            <button>
+                <a
+                  href="https://medium.com/@apicraft/rust-language-pros-cons-and-learning-guide-594e8c9e2b7c"
+                  title="Read more"
+                  target="_blank">
+                  Read more
+                </a>
+            </button>
+          </div>
+        </article>
+
+        <!--* Target 4 -->
+        <article>
+          <figure>
+            <img
+              src="https://www.clavistechnologies.com/wp-content/uploads/2021/08/react-js-1080x675.png"
+              alt="React.JS library image"
+            />
+          </figure>
+          <div class="articles-preview">
+            <h2>What is React library for JavaScript?</h2>
+            <p>
+                React is a framework that employs Webpack to automatically compile React,
+                JSX, and ES6 code while handling CSS file prefixes. React is a JavaScript-based
+                UI development library. Although React is a library rather than a language,
+                it is widely used in web development. The library first appeared in May 2013
+                and is now one of the most commonly used frontend libraries for web development.
+                React offers various extensions for entire application architectural support,
+                such as Flux and React Native, beyond mere UI.
+            </p>
+            <button>
+                <a
+                  href="https://www.simplilearn.com/tutorials/reactjs-tutorial/what-is-reactjs"
+                  title="Read more"
+                  target="_blank">
+                  Read more
+                </a>
+            </button>
+          </div>
+        </article>
+
+        <!--* Target 5 -->
+        <article>
+          <figure>
+            <img
+              src="https://fleek-team-bucket.storage.fleek.co/thumbnails-blog/Next.png"
+              alt="Next.JS framework image"
+            />
+          </figure>
+          <div class="articles-preview">
+            <h2>What is Next.JS Framework?</h2>
+            <p>
+                Next.js is a popular React framework that enables developers to
+                build feature-rich, scalable web applications. It provides a
+                powerful combination of server-side rendering (SSR) and static
+                site generation (SSG) capabilities, making it an excellent
+                choice for creating dynamic, high-performance websites.
+                In this article, we will explore the benefits of Next.js
+                and how it can enhance your web development experience.
+                It is developed by Vercel and Next.js stands out for its capabilities.
+            </p>
+            <button>
+                <a
+                href="https://www.geeksforgeeks.org/nextjs/"
+                title="Read more"
+                target="_blank">
+                Read more
+                </a>
+            </button>
+          </div>
+        </article>
+
+        <!--* Target 6 -->
+        <article>
+          <figure>
+            <img
+              src="https://d3755ihsz2n34g.cloudfront.net/_blogImages/Astro-Quick-Start-Guide.png"
+              alt="Astro framework image"
+            />
+          </figure>
+          <div class="articles-preview">
+            <h2>What is Astro Framework?</h2>
+            <p>
+                Astro is a modern web framework designed to help you build
+                fast and efficient websites with a focus on content. It stands
+                out for its use of Island Architecture, allowing parts of your
+                website to be dynamic only when needed. Astro is framework agnostic,
+                meaning it lets you use tools like React, Vue, or Svelte seamlessly.
+                One of its key features is the Zero JavaScript approach for faster
+                page loads. Whether you're just starting or looking to switch to a
+                more performance-oriented framework.
+            </p>
+            <button type="button">
+              <a
+              href="https://daily.dev/es/blog/get-to-know-astro-the-web-framework-for-content-driven-websites"
+              title="Read more"
+              target="_blank">
+              Read more
+            </a>
+            </button>
+          </div>
+        </article>
+
+        <!--! End of targets -->
+      </div>
     </div>
 
-
-</body>
+    <footer>
+        <p class="footer_text">
+            © Created by Aarón Santos Absalón 2024. All rights reserved.
+            Powered by Vercel and GitHub 💙
+        </p>
+    </footer>
+  </body>
 </html>
