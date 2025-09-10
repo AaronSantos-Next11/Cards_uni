@@ -6,3 +6,5 @@
 ![Screenshot one of the cards](img/screenshot_1.png)
 
 ![Screenshot two of the cards](/img/screenshot_2.png)
+
+Prueba desde Ubuntu Dual Boot
